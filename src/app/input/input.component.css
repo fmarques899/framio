@@ -1,0 +1,38 @@
+.framio-input {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+  outline: none;
+  font-size: 24px;
+  width: 100%;
+  height: 30px;
+}
+
+.framio-input:focus {
+  border-top: 0;
+  border-right: 0;
+  border-left: solid;
+  border-left-width: 3px;
+  border-bottom: 0;
+  outline: none;
+  font-size: 24px;
+  width: 100%;
+  height: 30px;
+  border-left-color: #000000;
+  transition: 1s;
+}
+
+input::placeholder {
+  color: rgb(86, 86, 86);
+  transition: 1s;
+}
+
+input:focus {
+  text-indent: 1px;
+}
+input:focus::placeholder {
+  transition: 1s;
+  color: transparent;
+  text-indent: 100%;
+}
