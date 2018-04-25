@@ -9,7 +9,7 @@ import { InputModule } from '../input/input.module';
 @NgModule({
   imports: [
     CommonModule,
-    InputModule
+    InputModule,
   ],
   exports: [
     NavbarComponent,

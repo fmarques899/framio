@@ -9,12 +9,14 @@ export class InputComponent implements OnInit {
 
   @Input()
   label: string = "";
+
+  @Input()
+  type: string = "";
+
   constructor() { }
 
   ngOnInit() {
-
+    (this.type === "" || this.type === undefined) ? (this.type="text") : (false);
   }
-
-  private chec
 
 }
