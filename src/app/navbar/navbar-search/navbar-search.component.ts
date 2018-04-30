@@ -7,13 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarSearchComponent implements OnInit {
 
+  public isActivated: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
   }
 
   triggerSearch() {
-    console.log("Trigged!");
+    this.isActivated = true;
+  }
+
+  cancelSearch() {
+    this.isActivated = false;
   }
 
 }

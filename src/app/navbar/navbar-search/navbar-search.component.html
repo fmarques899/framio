@@ -1,1 +1,12 @@
-<Navbar-Topic text="Search" (click)="triggerSearch()"></Navbar-Topic>
+<Navbar-Topic text="Search" *ngIf="!isActivated" (click)="triggerSearch()"></Navbar-Topic>
+<div class="">
+  <div class="framio-navbar-search-left" *ngIf="isActivated" (click)="cancelSearch()">
+    X
+  </div>
+  <div class="framio-navbar-search-input">
+    <TextInput *ngIf="isActivated" label="Search..."></TextInput>
+  </div>
+  <div class="framio-navbar-search-left" *ngIf="isActivated" (click)="cancelSearch()">
+    OK
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.framio-navbar-search-input {
+  float: left;
+  min-width: 5%;
+  margin-top: 8px;
+  cursor: pointer;
+  padding-right: 2%;
+}
+
+.framio-navbar-search-input input {
+  background-color: transparent !important;
+}
+
+.framio-navbar-search-left {
+  float: left;
+  min-width: 2%;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+.framio-navbar-search-right {
+  float: left;
+  min-width: 2%;
+  margin-top: 13px;
+  cursor: pointer;
+  margin-left: 2%;
+}
