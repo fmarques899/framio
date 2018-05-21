@@ -1,5 +1,8 @@
-<div class="framio-navbar" [style.background-color]="backgroundColor" [style.color]="textColor">
+<div class="framio-navbar" [style.background-color]="backgroundColor" [style.color]="textColor" *ngIf="!isSearchActive">
   <div class="framio-navbar-container">
     <ng-content></ng-content>
   </div>
+</div>
+<div class="framio-navbar" *ngIf="isSearchActive">
+  <Navbar-Search></Navbar-Search>
 </div>

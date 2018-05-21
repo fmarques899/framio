@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
   @Input()
   textColor: string;
 
+  isSearchActive: boolean = false;
   constructor(private colorsService: ColorsService) { }
 
   ngOnInit() {
@@ -21,4 +22,7 @@ export class NavbarComponent implements OnInit {
     this.textColor = this.colorsService.checkColor(this.textColor);
   }
 
+  triggerSearch(): void {
+    this.isSearchActive = true;
+  }
 }

@@ -7,6 +7,10 @@
   font-size: 24px;
   width: 100%;
   height: 30px;
+  background-color: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 50;
+  color: rgb(86, 86, 86);
 }
 
 .framio-input:focus {
@@ -19,6 +23,9 @@
   font-size: 24px;
   width: 100%;
   height: 30px;
+  background-color: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 50;
   border-left-color: #000000;
   transition: 1s;
 }

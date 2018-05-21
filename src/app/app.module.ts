@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { NavbarModule } from './navbar/navbar.module';
 import { InputModule } from './input/input.module';
 import { SectionModule } from './section/section.module';
+import { ButtonModule } from './button/button.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SectionModule } from './section/section.module';
     BrowserModule,
     NavbarModule,
     InputModule,
-    SectionModule
+    SectionModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
